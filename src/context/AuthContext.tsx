@@ -55,7 +55,7 @@ import {
   loginUser,
   logoutUser,
   signupUser,
-} from "../helpers/api-communicator";
+} from "../helpers/apicommunicator";
 
 type User = {
   name: string;
