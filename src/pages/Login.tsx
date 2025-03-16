@@ -23,9 +23,12 @@ const Login = () => {
     }
   };
   useEffect(() => {
-    if (auth?.user) {
-      return navigate("/chat");
-    }
+    const checkUser = async () => {
+      if (auth?.user) {
+        navigate("/chat");
+      }
+    };
+    checkUser();
   }, [auth]);
   return (
     <Box width={"100%"} height={"100%"} display="flex" flex={1}>
